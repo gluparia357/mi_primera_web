@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi Pagina Web Personal</title>
+</head>
+
+<body style="background-color: #f0f8ff; font-family: Arial, sans-serif;">
+
+  <!---------- Aca armo el encabezado con mi nombre y pongo el evento  -->
+  <h1 style="color: #2e8b57; font-size: 36px; cursor: pointer;" onclick="alert('¡Buenas tardes! Soy Guillermo Raul Luparia')">
+        Guillermo Raul Luparia
+  </h1>
+
+  <!-- Subtítulo -->
+  <h2 style="color: #4682b4; font-size: 28px;">
+        Sobre mí
+  </h2>
+   <!-- -----------Parrafo de presentacion personal con evento onmouseover -->
+  <p style="color: #333; font-size: 18px;" onmouseover="this.style.color='blue'">
+        Tengo 52 años, trabajo en sistemas desde los 19. Casado con 2 hijos que estudian Sistemas. Luego de 25 años de trabajar en sistemas, me propuse obtener el titulo de Ingeniero en Sistemas. Llevo 5 años, tengo 36 materias aprobadas y espero en un par de años, obtener el título. Es un logro personal que tengo pendiente desde que empecé a trabajar en tecnologías. Me especializo en base de datos, en dirigir equipos de trabajo donde intento obtener lo mejor de cada uno para un resultado eficiente.
+  </p>
+  
+  <!-------  Lista de hobbies intereses o actividades favoritas-->
+  <h2>
+        Mis Hobbies, intereses o actividades favoritas
+  </h2>
+
+  <ul>
+    <li>Leer, especialmente libros policiales</li>
+    <li>Jugar a juegos de disparos en primera persona</li>
+    <li>Programar</li>
+    <li>Ver peliculas o series en familia: policiales o de suspenso</li>
+    <li>Cocinar panificados: pan, pizza (mi peso no ayuda)</li>
+  </ul>
+
+    <!--------- Armo la Tabla -->
+
+  <h2>
+        Materias cursadas
+  </h2>
+  <table border="1" cellpadding="8" style="margin-top: 20px;">
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>Profesor</th>
+        <th>Horario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DESARROLLO Y ARQUITECTURAS WEB</td>
+        <td>Lic. Gustavo Escandell</td>
+        <td>Jueves 19:00 - 23:00</td>
+      </tr>
+      <tr>
+        <td>Programación en Python</td>
+        <td>Ing. Bonacorsi</td>
+        <td>Miércoles 19:00 - 23:00</td>
+      </tr>
+      <tr>
+        <td>Sistemas de computacion 1</td>
+        <td>Ing. Enrique Dousse</td>
+        <td>Viernes 19:00 - 23:00</td>
+      </tr>
+      <tr>
+        <td>Matematica discreta</td>
+        <td>Prof. Cristina De Federico</td>
+        <td>Lunes 19:00 - 22:00</td>
+      </tr>
+    </tbody>
+  </table>
+    
+
+  <h2>
+        Mi imagen representativa
+  </h2>
+  
+   <img src="imagenes/imagen.jpg" alt="Imagen representativa" style="width: 25%; margin-top: 20px; display: block;">
+   
+  <!----------.Enlace a google -->
+  <h2>
+        Enlace a Google
+  </h2>
+  <p style="margin-top: 10px;">
+    <a href="https://www.google.com" target="_blank">Visita Google</a>
+  </p>
+
+  <!-- Cambio el estilo con dos botones para cambiar el color de fondo -->
+
+  <h2>
+        Cambio el estilo: cambio de fondo
+  </h2>
+    <button onclick="document.body.style.backgroundColor = '#e0f7fa';">
+        Cambiar fondo
+    </button>
+
+    <button onclick="document.body.style.backgroundColor = 'white';">
+        Vuelvo al fondo blanco original
+    </button>
+
+
+    <!----------- Armo el Formulario -->
+
+  <h2>
+        Formulario de carga de personas
+  </h2>
+  <form style="margin-top: 20px;">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo"><br><br>
+
+    Género:<br>
+    <input type="radio" id="masculino" name="genero" value="Masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="femenino" name="genero" value="Femenino">
+    <label for="femenino">Femenino</label><br>
+    <input type="radio" id="desconocido" name="genero" value="Desconocido">
+    <label for="otro">Desconocido</label><br><br>
+
+    <label for="materia">Materia preferida:</label>
+    <select id="materia" name="materia">
+      <option value="web">Desarrollo y Arquitecturas Web</option>
+      <option value="python">Programación en Python</option>
+      <option value="datos">Bases de Datos</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+
+</body>
+</html>

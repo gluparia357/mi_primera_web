@@ -8,18 +8,31 @@
 <body style="background-color: #f0f8ff; font-family: Arial, sans-serif;">
 
   <!---------- Aca armo el encabezado con mi nombre y pongo el evento  -->
-  <h1 style="color: #2e8b57; font-size: 36px; cursor: pointer;" onclick="alert('¡Buenas tardes! Soy Guillermo Raul Luparia')">
-        Guillermo Raul Luparia
-  </h1>
+  <center>
+  <table bgcolor="#2e8b57" width="100%">
+    <tr>
+      <td align="center">
+        <font face="Arial" size="7" color="white">
+          <h1>Guillermo Raul Luparia</h1>
+        </font>
+      </td>
+    </tr>
+  </table>
+</center>
+
 
   <!-- Subtítulo -->
-  <h2 style="color: #4682b4; font-size: 28px;">
-        Sobre mí
-  </h2>
+<font face="Arial" size="6" color="#4682b4">
+  <h2>Sobre mí</h2>
+</font>
+
    <!-- -----------Parrafo de presentacion personal con evento onmouseover -->
-  <p style="color: #333; font-size: 18px;" onmouseover="this.style.color='blue'">
-        Tengo 52 años, trabajo en sistemas desde los 19. Casado con 2 hijos que estudian Sistemas. Luego de 25 años de trabajar en sistemas, me propuse obtener el titulo de Ingeniero en Sistemas. Llevo 5 años, tengo 36 materias aprobadas y espero en un par de años, obtener el título. Es un logro personal que tengo pendiente desde que empecé a trabajar en tecnologías. Me especializo en base de datos, en dirigir equipos de trabajo donde intento obtener lo mejor de cada uno para un resultado eficiente.
-  </p>
+  <font face="Arial" size="4" color="#333333">
+    <p>
+      Tengo 52 años, trabajo en sistemas desde los 19. Casado con 2 hijos que estudian Sistemas. Luego de 25 años de trabajar en sistemas, me propuse obtener el título de Ingeniero en Sistemas. Llevo 5 años, tengo 36 materias aprobadas y espero en un par de años, obtener el título. Es un logro personal que tengo pendiente desde que empecé a trabajar en tecnologías. Me especializo en base de datos, en dirigir equipos de trabajo donde intento obtener lo mejor de cada uno para un resultado eficiente.
+    </p>
+ </font>
+
   
   <!-------  Lista de hobbies intereses o actividades favoritas-->
   <h2>
@@ -76,36 +89,36 @@
         Mi imagen representativa
   </h2>
   
-   <img src="imagenes/imagen.jpg" alt="Imagen representativa" style="width: 25%; margin-top: 20px; display: block;">
-   
-  <!----------.Enlace a google -->
-  <h2>
-        Enlace a Google
-  </h2>
-  <p style="margin-top: 10px;">
+  <body>
+
+  <!-- Imagen -->
+  <img src="imagenes/imagen.jpg" alt="Imagen representativa">
+
+  <!-- Enlace a Google -->
+  <h2>Enlace a Google</h2>
+  <p>
     <a href="https://www.google.com" target="_blank">Visita Google</a>
   </p>
 
-  <!-- Cambio el estilo con dos botones para cambiar el color de fondo -->
+  <!-- Información sobre el cambio de fondo () -->
+  <h2>Cambio el estilo: cambio de fondo</h2>
+  <p>
+      No disponible en HTML puro (requiere JavaScript)
+    </p>
+  <p>
+      Los botones están visibles, pero no cambiarán el color del fondo.
+  </p>
 
-  <h2>
-        Cambio el estilo: cambio de fondo
-  </h2>
-    <button onclick="document.body.style.backgroundColor = '#e0f7fa';">
-        Cambiar fondo
-    </button>
+  <button>
+      Cambiar fondo
+  </button>
+  <button>
+      Vuelvo al fondo blanco original
+  </button>
 
-    <button onclick="document.body.style.backgroundColor = 'white';">
-        Vuelvo al fondo blanco original
-    </button>
-
-
-    <!----------- Armo el Formulario -->
-
-  <h2>
-        Formulario de carga de personas
-  </h2>
-  <form style="margin-top: 20px;">
+  <!-- Formulario de carga de personas -->
+  <h2>Formulario de carga de personas</h2>
+  <form>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre"><br><br>
 
@@ -115,10 +128,12 @@
     Género:<br>
     <input type="radio" id="masculino" name="genero" value="Masculino">
     <label for="masculino">Masculino</label><br>
+
     <input type="radio" id="femenino" name="genero" value="Femenino">
     <label for="femenino">Femenino</label><br>
+
     <input type="radio" id="desconocido" name="genero" value="Desconocido">
-    <label for="otro">Desconocido</label><br><br>
+    <label for="desconocido">Desconocido</label><br><br>
 
     <label for="materia">Materia preferida:</label>
     <select id="materia" name="materia">
@@ -129,8 +144,6 @@
 
     <button type="submit">Enviar</button>
   </form>
-
-
 
 </body>
 </html>

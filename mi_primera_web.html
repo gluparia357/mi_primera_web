@@ -13,20 +13,19 @@
     <tr>
       <td align="center">
         <font face="Arial" size="7" color="white">
-          <h1>Guillermo Raul Luparia</h1>
+          <h1 onclick="alert('¡Has hecho clic en mi nombre!')">Guillermo Raul Luparia</h1>
         </font>
       </td>
     </tr>
   </table>
 </center>
 
-
   <!-- Subtítulo -->
 <font face="Arial" size="6" color="#4682b4">
   <h2>Sobre mí</h2>
 </font>
 
-   <!-- -----------Parrafo de presentacion personal con evento onmouseover -->
+   <!-- -----------Parrafo de presentacion personal -->
   <font face="Arial" size="4" color="#333333">
     <p>
       Tengo 52 años, trabajo en sistemas desde los 19. Casado con 2 hijos que estudian Sistemas. Luego de 25 años de trabajar en sistemas, me propuse obtener el título de Ingeniero en Sistemas. Llevo 5 años, tengo 36 materias aprobadas y espero en un par de años, obtener el título. Es un logro personal que tengo pendiente desde que empecé a trabajar en tecnologías. Me especializo en base de datos, en dirigir equipos de trabajo donde intento obtener lo mejor de cada uno para un resultado eficiente.
@@ -91,32 +90,29 @@
   
   <body>
 
-  <!-- Imagen -->
+  <!------------ Imagen, con mi foto ----->
   <img src="imagenes/imagen.jpg" alt="Imagen representativa">
 
-  <!-- Enlace a Google -->
+  <!---------------- Enlace a Google ------------------------->
   <h2>Enlace a Google</h2>
   <p>
     <a href="https://www.google.com" target="_blank">Visita Google</a>
   </p>
 
-  <!-- Información sobre el cambio de fondo () -->
-  <h2>Cambio el estilo: cambio de fondo</h2>
-  <p>
-      No disponible en HTML puro (requiere JavaScript)
-    </p>
-  <p>
-      Los botones están visibles, pero no cambiarán el color del fondo.
-  </p>
+ <!-- Cambio el color de fondo en el evento -->
+<table>
+    <tr>
+        <td onmouseover="this.style.backgroundColor='lightcoral'" onmouseout="this.style.backgroundColor=''">
+            Pasa el mouse para cambiar el fondo
+        </td>
+    </tr>
+</table>
 
-  <button>
-      Cambiar fondo
-  </button>
-  <button>
-      Vuelvo al fondo blanco original
-  </button>
+</body>
+</html>
 
-  <!-- Formulario de carga de personas -->
+
+  <!------------------- Formulario de carga de personas --------------->
   <h2>Formulario de carga de personas</h2>
   <form>
     <label for="nombre">Nombre:</label>
